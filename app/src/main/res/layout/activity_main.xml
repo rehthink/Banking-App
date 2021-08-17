@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/transactionHistory"
+            android:layout_width="268dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="278dp"
+            android:backgroundTint="#3E4FAC">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="Transaction History"
+                android:textAlignment="center"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="202dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/customer"
+            android:layout_width="268dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#96AAA8">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:text="View All Customer"
+                android:textAlignment="center"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar3"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="202dp"
+                android:progressTint="@color/black" />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
